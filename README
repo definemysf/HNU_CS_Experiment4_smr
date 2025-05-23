@@ -1,0 +1,48 @@
+################
+# 实验标题
+CS:APP Shell Lab
+################
+# 实验标题分隔符
+
+Files:
+# 文件列表
+
+Makefile	# Compiles your shell program and runs the tests
+# 用于编译你的 shell 程序并运行测试
+
+README		# This file
+# 当前这个说明文件
+
+tsh.c		# The shell program that you will write and hand in
+# 你需要编写并提交的 shell 程序源码
+
+tshref		# The reference shell binary.
+# 官方提供的 shell 可执行文件（参考实现）
+
+# The remaining files are used to test your shell
+# 以下文件用于测试你的 shell 程序
+
+sdriver.pl	# The trace-driven shell driver
+# 用于驱动 shell 的测试脚本（Perl 脚本）
+
+trace*.txt	# The 15 trace files that control the shell driver
+# 15 个控制 shell 驱动的跟踪文件
+
+tshref.out 	# Example output of the reference shell on all 15 traces
+# 参考 shell 在所有 15 个跟踪文件下的示例输出
+
+# Little C programs that are called by the trace files
+# 被跟踪文件调用的小型 C 程序
+
+myspin.c	# Takes argument <n> and spins for <n> seconds
+# 接收参数 <n>，并自旋 <n> 秒
+
+mysplit.c	# Forks a child that spins for <n> seconds
+# 创建一个子进程，该子进程自旋 <n> 秒
+
+mystop.c        # Spins for <n> seconds and sends SIGTSTP to itself
+# 自旋 <n> 秒后向自身发送 SIGTSTP 信号（停止信号）
+
+myint.c         # Spins for <n> seconds and sends SIGINT to itself
+# 自旋 <n> 秒后向自身发送 SIGINT 信号（中断信号）
+
